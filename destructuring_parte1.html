@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+        <script type="text/babel">
+        
+        // destructuring tira valores dentro de uma estrutura
+        let frutas = ['Abacaxi', 'Uva','Pera','Mamão']
+
+        //let [a,b,c] = frutas //pular indice
+        let [a,b = 'Abacate',c,d,e = 'Banana'] = frutas
+
+        //console.log(a,b,c,d,e)
+        let coisas = [['Abacaxi', 'Uva', 'Pera', 'Mamão'],[ 'José', 'Maria' ]]
+        //levando todas as informações na variável n2
+        let [,[,n2]] = coisas
+
+        console.log(n2)
+        </script>
+
+        
+        <body>
+            
+        </body>
+    </head>
+</html>
